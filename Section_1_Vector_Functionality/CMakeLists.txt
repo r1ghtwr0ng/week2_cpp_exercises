@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(include)
 
 # Add your source files
-add_executable(opengl_proj 
+add_executable(exercise_1 
     src/exercise_main.cpp 
     src/vector_functions.cpp
 )

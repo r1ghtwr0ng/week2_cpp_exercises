@@ -6,13 +6,7 @@
 
 int countMultiplesOfFive(std::vector<int> v)
 {
-    int counter = 0;
-    for (int i = 0; i < v.size(); i++) {
-        if (v[i] % 5 == 0) {
-            counter++;
-        }
-    }
-    return counter;
+    return std::count_if(v.begin(), v.end(), [](int i){ return i % 5 == 0; });
 }
 
 
